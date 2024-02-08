@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collection - Michael Cooley Collection</title>
+
+<div class="header">
+	<nav>
+	  <a href="/dashboard">Dashboard</a> | 
+	  <a href="/facts">Facts</a> | 
+	  <a href="/michaelcooleycollection">Collection</a>
+	</nav>
+	<h1>Michael Cooley Collection</h1>
+  </div>
+  
+<style>
+  body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.header, .footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.main-content {
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.search-bar {
+  padding: 20px;
+  text-align: center;
+}
+
+.search-bar input[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.collection-section {
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: calc(33% - 20px); /* Three items per row, with gap */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.collection-section h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.collection-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px 0;
+}
+
+.collection-item:last-child {
+  border-bottom: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .collection-section {
+    width: calc(50% - 20px); /* Two items per row on smaller screens */
+  }
+
+  .search-bar input[type="text"] {
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .collection-section {
+    width: 100%; /* Full width on very small screens */
+  }
+
+  .search-bar input[type="text"] {
+    width: 90%;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="search-bar">
+  <input type="text" placeholder="Search the collection...">
+</div>
+
+<div class="main-content">
+  <!-- Collection content will go here -->
+</div>
+
+<div class="footer">
+  <button onclick="downloadCollection()">Download</button>
+  <button onclick="addElement()">Add Element</button>
+  <p>Created by Daniels</p>
+</div>
+
+<script>
+  // Placeholder functions for downloading and adding elements
+  function downloadCollection() {
+    // Code to trigger download of collection
+  }
+  function addElement() {
+    // Code to add new element to collection
+  }
+</script>
+
+</body>
+</html>
